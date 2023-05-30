@@ -267,8 +267,8 @@ table {
   border-top: solid 1px #dddddd; }
 
 header {
-  padding: 15px 0px;
-  background-color: white;
+  padding: 0px 0px;
+  background-color: #E64177;
   width: 100vw;
   text-align: center; }
 
@@ -332,6 +332,10 @@ body {
   -o-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
+#logo-header {
+    width: 600px; /* Set the desired width */
+    height: auto; /* Let the height adjust proportionally */
+  }
 
 #judul {
   display: flex;
@@ -343,4 +347,5 @@ body {
     #judul #judul-text h2 {
       margin: 0 !important; }
 
+  
 /*# sourceMappingURL=style.css.map */

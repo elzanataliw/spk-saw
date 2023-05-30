@@ -34,7 +34,7 @@ require './connect.php';
             <div class="panel-middle">
                 <div class="table-responsive">
                     <table>
-                        <thead><tr><th>No</th><th>Item's Name</th><th>Action</th></tr></thead>
+                        <thead><tr><th>No</th><th>Item Name</th><th>Action</th></tr></thead>
                         <tbody>
                         <?php
                         $query="SELECT bobot_kriteria.id_jenisbarang AS idbarangbobot,jenis_barang.namaBarang AS namaBarang FROM bobot_kriteria INNER JOIN jenis_barang WHERE bobot_kriteria.id_jenisbarang=jenis_barang.id_jenisbarang GROUP BY idbarangbobot ORDER BY idbarangbobot ASC";
@@ -55,7 +55,7 @@ require './connect.php';
                                 $no++;
                             }
                         }else{
-                            echo "<tr><td  class='text-center text-green' colspan='4'><b>Kosong</b></td></tr>";
+                            echo "<tr><td  class='text-center text-green' colspan='4'><b>Empty</b></td></tr>";
                         }
                         ?>
                         </tbody>

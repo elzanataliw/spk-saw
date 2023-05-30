@@ -3,8 +3,8 @@
     <div class="panel-middle" id="judul">
         <img src="asset/image/barang.svg">
         <div id="judul-text">
-            <h2 class="text-green">ITEMS</h2>
-            Halamanan Administrator Barang
+            <h2 class="text-green">ITEM</h2>
+            Administrator Page Item
         </div>
     </div>
 </div>

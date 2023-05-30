@@ -3,7 +3,7 @@
         <img src="asset/image/supplier.svg">
         <div id="judul-text">
             <h2 class="text-green">Supplier</h2>
-            Halamanan Administrator Supplier
+            Administrator Page Supplier
         </div>
     </div>
 </div>
@@ -23,12 +23,12 @@
     <div class="col-8">
         <div class="panel">
             <div class="panel-top">
-                <b class="text-green">Daftar Supplier</b>
+                <b class="text-green">List of Supplier</b>
             </div>
             <div class="panel-middle">
                 <div class="table-responsive">
                     <table>
-                        <thead><tr><th>No</th><th>Nama</th><th>Aksi</th></tr></thead>
+                        <thead><tr><th>No</th><th>Name</th><th>Action</th></tr></thead>
                         <tbody>
                         <?php
                         $query="SELECT * FROM supplier";
@@ -49,7 +49,7 @@
                                 $no++;
                             }
                         }else{
-                            echo "<tr><td  class='text-center text-green' colspan='3'>Kosong</td></tr>";
+                            echo "<tr><td  class='text-center text-green' colspan='3'>Empty</td></tr>";
                         }
                         ?>
                         </tbody>

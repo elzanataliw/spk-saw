@@ -3,8 +3,8 @@
     <div class="panel-middle" id="judul">
         <img src="asset/image/kriteria.svg">
         <div id="judul-text">
-            <h2 class="text-green">KRITERIA</h2>
-            Halamanan Administrator Kriteria
+            <h2 class="text-green">CRITERIA</h2>
+            Administrator Page Criteria
         </div>
     </div>
 </div>
@@ -24,12 +24,12 @@
     <div class="col-8">
         <div class="panel">
             <div class="panel-top">
-                <b class="text-green">Daftar Kriteria</b>
+                <b class="text-green">List of Criteria</b>
             </div>
             <div class="panel-middle">
                 <div class="table-responsive">
                     <table>
-                        <thead><tr><th>No</th><th>Nama</th><th>Sifat</th><th>Aksi</th></tr></thead>
+                        <thead><tr><th>No</th><th>Name</th><th>Type</th><th>Action</th></tr></thead>
                         <tbody>
                         <?php
                         $query="SELECT * FROM kriteria";
@@ -49,7 +49,7 @@
                                 $no++;
                             }
                         }else{
-                            echo "<tr><td  class='text-center text-green' colspan='4'><b>Kosong</b></td></tr>";
+                            echo "<tr><td  class='text-center text-green' colspan='4'><b>Empty</b></td></tr>";
                         }
                         ?>
                         </tbody>

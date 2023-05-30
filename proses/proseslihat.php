@@ -34,7 +34,7 @@ switch ($op){
             $no++;
         }
     }else{
-        echo "<tr><td  class='text-center text-green' colspan='4'><b>Kosong</b></td></tr>";
+        echo "<tr><td  class='text-center text-green' colspan='4'><b>Empty</b></td></tr>";
     }
         break;
     case 'nilai':
@@ -62,7 +62,7 @@ switch ($op){
                 $no++;
             }
         }else{
-            echo "<tr><td  class='text-center text-green' colspan='4'><b>Kosong</b></td></tr>";
+            echo "<tr><td  class='text-center text-green' colspan='4'><b>Empty</b></td></tr>";
         }
         break;
 }

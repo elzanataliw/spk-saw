@@ -48,7 +48,9 @@ b, h1, h2, h3, h4, h5 {
 .text-center {
   text-align: center;
   text-align: -moz-center;
-  text-align: -webkit-center; }
+  text-align: -webkit-center; 
+  line-height: 1.5;
+}
 
 .text-green {
   color: #E64177 !important; }

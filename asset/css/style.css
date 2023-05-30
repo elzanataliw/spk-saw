@@ -312,7 +312,7 @@ main {
     height: 30px;
     z-index: 0; }
   main #main-body {
-    width: 70vw;
+    width: 90vw;
     z-index: 1;
     top: 0;
     position: absolute; }

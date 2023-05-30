@@ -15,7 +15,7 @@ if ($execute2->num_rows == 0){
 ?>
 <!-- judul -->
 <div class="panel-top panel-top-edit">
-    <b><i class="fa fa-pencil-alt"></i> Ubah data</b>
+    <b><i class="fa fa-pencil-alt"></i> Edit data</b>
 </div>
 <form id="form" action="./proses/prosesubah.php" method="POST">
     <input type="hidden" value="bobot" name="op">
@@ -28,7 +28,7 @@ if ($execute2->num_rows == 0){
                 $data=$execute->fetch_array(MYSQLI_ASSOC);
                 ?>
                 <div class="group-input">
-                    <label for="jenisbarang">Jenis Barang</label>
+                    <label for="jenisbarang">Item Type</label>
                     <input class="form-custom" value="<?php echo $data['namaBarang'];?>" disabled type="text" autocomplete="off" required name="barang" id="barang">
                 </div>
             </div>

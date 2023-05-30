@@ -1,15 +1,15 @@
 
 <!-- judul -->
 <div class="panel-top">
-    <b class="text-green"><i class="fa fa-plus-circle text-green"></i> Tambah data</b>
+    <b class="text-green"><i class="fa fa-plus-circle text-green"></i> Add</b>
 </div>
 <form id="form" action="./proses/prosestambah.php" method="POST">
     <input type="hidden" value="bobot" name="op">
     <div class="panel-middle">
         <div class="group-input">
-            <label for="barang">Jenis Barang</label>
+            <label for="barang">Item Type</label>
             <select class="form-custom" required name="barang" id="barang">
-                <option selected disabled>--Pilih Jenis Barang--</option>
+                <option selected disabled>--Select Item Type--</option>
                 <?php
                 $query="SELECT * FROM jenis_barang";
                 $execute=$konek->query($query);
@@ -39,7 +39,7 @@
         ?>
     </div>
     <div class="panel-bottom">
-        <button type="submit" id="buttonsimpan" class="btn btn-green"><i class="fa fa-save"></i> Simpan</button>
+        <button type="submit" id="buttonsimpan" class="btn btn-green"><i class="fa fa-save"></i> Save</button>
         <button type="reset" id="buttonreset" class="btn btn-second">Reset</button>
     </div>
 </form>

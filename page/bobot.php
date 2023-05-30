@@ -6,8 +6,8 @@ require './connect.php';
     <div class="panel-middle" id="judul">
         <img src="asset/image/bobot.svg">
         <div id="judul-text">
-            <h2 class="text-green">BOBOT</h2>
-            Halamanan Administrator Bobot Kriteria
+            <h2 class="text-green">WEIGHT</h2>
+            Administrator Page Criteria Weight
         </div>
     </div>
 </div>
@@ -29,12 +29,12 @@ require './connect.php';
     <div class="col-8">
         <div class="panel">
             <div class="panel-top">
-                <b class="text-green">Daftar Bobot</b>
+                <b class="text-green">Weight List</b>
             </div>
             <div class="panel-middle">
                 <div class="table-responsive">
                     <table>
-                        <thead><tr><th>No</th><th>Nama Barang</th><th>Aksi</th></tr></thead>
+                        <thead><tr><th>No</th><th>Item's Name</th><th>Action</th></tr></thead>
                         <tbody>
                         <?php
                         $query="SELECT bobot_kriteria.id_jenisbarang AS idbarangbobot,jenis_barang.namaBarang AS namaBarang FROM bobot_kriteria INNER JOIN jenis_barang WHERE bobot_kriteria.id_jenisbarang=jenis_barang.id_jenisbarang GROUP BY idbarangbobot ORDER BY idbarangbobot ASC";

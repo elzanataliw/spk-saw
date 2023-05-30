@@ -2,8 +2,8 @@
     <div class="panel-middle" id="judul">
         <img src="asset/image/sub-kriteria.svg">
         <div id="judul-text">
-            <h2 class="text-green">SUB KRITERIA</h2>
-            Halamanan Administrator Sub Kriteria
+            <h2 class="text-green">SUB CRITERIA</h2>
+            Administrator Page Sub-Criteria
         </div>
     </div>
 </div>
@@ -23,16 +23,16 @@
     <div class="col-8">
         <div class="panel">
             <div class="panel-top">
-                <b style="float: left" class="text-green">Daftar Sub Kriteria</b>
+                <b style="float: left" class="text-green">List of Sub-Criteria</b>
                 <div style="float:right;width: 250px;">
                     <select class="form-custom" name="pilih" id="pilih">
-                        <option value="">Semua Kriteria</option>;
+                        <option value="">All Criteria</option>;
                         <?php
                         $query="SELECT id_kriteria,namaKriteria FROM kriteria";
                         $execute=$konek->query($query);
                         if ($execute->num_rows > 0){
                             while ($data=$execute->fetch_array(MYSQLI_ASSOC)){
-                                if ($pilih==$data[id_kriteria]) {
+                                if ($pilih==$data['id_kriteria']) {
                                     $selected="selected";
                                 }else{
                                     $selected=null;
@@ -50,7 +50,7 @@
             <div class="panel-middle">
                 <div class="table-responsive">
                     <table>
-                        <thead><tr><th>No</th><th>Nama</th><th>Sifat</th><th>Sifat</th><th>Aksi</th></tr></thead>
+                        <thead><tr><th>No</th><th>Criteria</th><th>Score</th><th>Description</th><th>Action</th></tr></thead>
                         <tbody id="isiSubkriteria"></tbody>
                     </table>
                 </div>

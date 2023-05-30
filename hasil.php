@@ -7,12 +7,12 @@ $saw=new saw();
 $saw->setconfig($konek,$cookiePilih);
 ?>
 <div id="Matriks Keputusan">
-    <h3>Matriks Keputusan</h3>
+    <h3>Decision Matrix Table</h3>
     <table>
         <thead>
             <tr>
                 <th rowspan="2">Alternative</th>
-                <th colspan="<?php echo count($saw->getKriteria()) ?>">Kriteria</th>
+                <th colspan="<?php echo count($saw->getKriteria()) ?>">Criteria</th>
             </tr>
             <tr>
                 <?php
@@ -38,12 +38,12 @@ $saw->setconfig($konek,$cookiePilih);
     </table>
 </div>
 <div id="Normalisasi Matriks Keputusan">
-    <h3>Normalisasi Matriks Keputusan</h3>
+    <h3>Decision Matrix Normalization Table</h3>
     <table>
         <thead>
             <tr>
                 <th rowspan="2">Alternative</th>
-                <th colspan="<?php echo count($saw->getKriteria()) ?>">Kriteria</th>
+                <th colspan="<?php echo count($saw->getKriteria()) ?>">Criteria</th>
             </tr>
             <tr>
                 <?php
@@ -75,13 +75,13 @@ $saw->setconfig($konek,$cookiePilih);
     </table>
 </div>
 <div id="Perangkingan">
-    <h3>Perangkingan</h3>
+    <h3>Ranking Table</h3>
     <table>
         <thead>
             <tr>
                 <th rowspan="2">Alternative</th>
-                <th colspan="<?php echo count($saw->getKriteria()) ?>">Kriteria</th>
-                <th rowspan="2">Hasil</th>
+                <th colspan="<?php echo count($saw->getKriteria()) ?>">Criteria</th>
+                <th rowspan="2">Result</th>
             </tr>
             <tr>
                 <?php

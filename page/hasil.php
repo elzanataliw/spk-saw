@@ -3,8 +3,8 @@
     <div class="panel-middle" id="judul">
         <img src="asset/image/rank.svg">
         <div id="judul-text">
-            <h2 class="text-green">RESULTS</h2>
-            Administrator Page Results
+            <h2 class="text-green">RESULT</h2>
+            Administrator Page Result
         </div>
     </div>
 </div>

@@ -49,7 +49,7 @@
                                 $no++;
                             }
                         }else{
-                            echo "<tr><td  class='text-center text-green' colspan='3'>Kosong</td></tr>";
+                            echo "<tr><td  class='text-center text-green' colspan='3'>Empty</td></tr>";
                         }
                         ?>
                         </tbody>

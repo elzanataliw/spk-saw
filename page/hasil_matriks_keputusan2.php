@@ -21,7 +21,7 @@ if (isset($cookiePilih) && !empty($cookiePilih)){
 /////////////////////////////////////////////////////////////////awal set header table matriks keputusan
 $executeQueryTabel=$konek->query( $querykriteria);
 echo "<div class='panel-middle'>";
-echo "<p><b>Matriks Keputusan</b></p><table><tr><th rowspan='2'>Alternative</th><th colspan='$executeQueryTabel->num_rows'>Kriteria</th></tr><tr>";
+echo "<p><b>Matriks Keputusan</b></p><table><tr><th rowspan='2'>Alternative</th><th colspan='$executeQueryTabel->num_rows'>Criteria</th></tr><tr>";
 while ($data=$executeQueryTabel->fetch_array(MYSQLI_ASSOC)){
     echo "<th>$data[namaKriteria]</th>";
     array_push($kriteriaArray,$data['namaKriteria']);//simpan nama nama kriteria ke array
@@ -48,12 +48,12 @@ if ($executeGetAlternative->num_rows > 0){
             $indexArray++;
     }
 }else{
-    echo "<tr class='text-center'><td colspan=\"$colspan\">Data Kosong</td></tr>";
+    echo "<tr class='text-center'><td colspan=\"$colspan\">Empty data</td></tr>";
 }
 echo "</table>";
 /******akhir isi table matriks keputusan****/
 /////////////////////////////////////////////////////////////////awal set header table normalisasi
-echo "<p><b>Normalisasi Matriks Keputusan</b></p><table><tr><th rowspan='2'>Alternative</th><th colspan='$executeQueryTabel->num_rows'>Kriteria</th></tr><tr>";
+echo "<p><b>Normalisasi Matriks Keputusan</b></p><table><tr><th rowspan='2'>Alternative</th><th colspan='$executeQueryTabel->num_rows'>Criteria</th></tr><tr>";
 foreach ($kriteriaArray as $namaKriteria) {
     echo "<th>$namaKriteria</th>";
 }

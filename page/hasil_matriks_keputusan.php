@@ -23,7 +23,7 @@ if (isset($cookiePilih) && !empty($cookiePilih)){
 /////////////////////////////////////////////////////////////////awal set header table matriks keputusan
 $executeQueryTabel=$konek->query( $querykriteria);
 echo "<div class='panel-middle'>";
-echo "<p><h3>Matriks Keputusan</h3></p><table><tr><th rowspan='2'>Alternative</th><th colspan='$executeQueryTabel->num_rows'>Kriteria</th></tr><tr>";
+echo "<p><h3>Matriks Keputusan</h3></p><table><tr><th rowspan='2'>Alternative</th><th colspan='$executeQueryTabel->num_rows'>Criteria</th></tr><tr>";
 while ($data=$executeQueryTabel->fetch_array(MYSQLI_ASSOC)){
     echo "<th>$data[namaKriteria]</th>";
     array_push($kriteriaArray,$data['namaKriteria']);//simpan nama nama kriteria ke array
@@ -50,12 +50,12 @@ if ($executeGetAlternative->num_rows > 0){
             $indexArray++;
     }
 }else{
-    echo "<tr class='text-center'><td colspan=\"$colspan\">Data Kosong</td></tr>";
+    echo "<tr class='text-center'><td colspan=\"$colspan\">Empty data</td></tr>";
 }
 echo "</table>";
 /******akhir isi table matriks keputusan****/
 /////////////////////////////////////////////////////////////////awal set header table normalisasi
-echo "<p><h3>Normalisasi Matriks Keputusan</h3></p><table><tr><th rowspan='2'>Alternative</th><th colspan='$executeQueryTabel->num_rows'>Kriteria</th></tr><tr>";
+echo "<p><h3>Normalisasi Matriks Keputusan</h3></p><table><tr><th rowspan='2'>Alternative</th><th colspan='$executeQueryTabel->num_rows'>Criteria</th></tr><tr>";
 foreach ($kriteriaArray as $namaKriteria) {
     echo "<th>$namaKriteria</th>";
 }
@@ -75,15 +75,15 @@ if (!empty($supplierArray)){
             echo"</tr>";
         }
     }else{
-        echo "<tr class='text-center'><td colspan=\"$colspan\"><b>Bobot Kriteria tidak boleh kosong</b></td></tr>";
+        echo "<tr class='text-center'><td colspan=\"$colspan\"><b>Criteria weight cannot be empty</b></td></tr>";
     }
 }else{
-    echo "<tr class='text-center'><td colspan=\"$colspan\">Data Kosong</td></tr>";
+    echo "<tr class='text-center'><td colspan=\"$colspan\">Empty data</td></tr>";
 }
 echo "</table>";
 /******akhir isi table normalisasi****/
 /////////////////////////////////////////////////////////////////awal set header table perangkingan
-echo "<p><h3>Normalisasi Matriks Keputusan</h3></p> <table> <tr><th rowspan='2'>Alternative</th><th colspan='$executeQueryTabel->num_rows'>Kriteria</th><th rowspan='2'>Hasil</th></tr><tr>";
+echo "<p><h3>Normalisasi Matriks Keputusan</h3></p> <table> <tr><th rowspan='2'>Alternative</th><th colspan='$executeQueryTabel->num_rows'>Kriteria</th><th rowspan='2'>Result</th></tr><tr>";
 foreach ($kriteriaArray as $namaKriteria) {
     echo "<th>$namaKriteria</th>";
 }
@@ -102,10 +102,10 @@ if (!empty($supplierArray)){
             echo"</tr>";
         }
     }else{
-        echo "<tr class='text-center'><td colspan=\"$colspan\"><b>Bobot Kriteria tidak boleh kosong</b></td></tr>";
+        echo "<tr class='text-center'><td colspan=\"$colspan\"><b>Criteria weight cannot be empty</b></td></tr>";
     }
 }else{
-    echo "<tr class='text-center'><td colspan=\"$colspan\">Data Kosong</td></tr>";
+    echo "<tr class='text-center'><td colspan=\"$colspan\">Empty Data</td></tr>";
 }
 echo "</table>";
 /******akhir isi table perangkingan****/
@@ -114,5 +114,5 @@ echo "</table>";
     echo "<p>Jadi rekomendasi pemilihan supplier <i>$execute[namaBarang]</i> jatuh pada <i>$execute[namaSupplier]</i> dengan Nilai <b>".round($execute['hasil'],3)."</b></p>";
 echo "</div>";
 }else{
-    echo "<p class='text-center'><b>Pilih List Barang, untuk menampilkan hasil</b></p>";
+    echo "<p class='text-center'><b>Select an item to display the results</b></p>";
 }

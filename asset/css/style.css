@@ -336,6 +336,9 @@ body {
     width: 600px; /* Set the desired width */
     height: auto; /* Let the height adjust proportionally */
   }
+#logo-login {
+    margin-bottom: 30px; 
+  }
 
 #judul {
   display: flex;

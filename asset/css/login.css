@@ -337,9 +337,9 @@ body#login {
   padding: 0;
   z-index: 1; }
 
-#logo-login {
-  margin-bottom: 30px; }
-
+  #logo-login {
+    margin-bottom: 0px; 
+    }
 #bg {
   text-align: center;
   position: fixed;

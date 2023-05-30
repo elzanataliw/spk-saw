@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="asset/plugin/font-icon/css/fontawesome-all.min.css">
 </head>
 <body id="login">
-<img src="asset/image/logo.svg" id="logo-login">
+<img src="asset/image/logo2.png" id="logo-login" style="width: 500px">
 <div class="alert alert-red text-center" style="display:none;" id="alert"><i class="fa fa-info-circle fa-lg"></i><p id="value">sdasdasd</p></div>
 <div id="panel-login">
     <form id="formlogin" method="POST" action="ceklogin.php">

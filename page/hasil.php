@@ -3,8 +3,8 @@
     <div class="panel-middle" id="judul">
         <img src="asset/image/rank.svg">
         <div id="judul-text">
-            <h2 class="text-green">HASIL</h2>
-            Halamanan Utama Hasil Penilaian
+            <h2 class="text-green">RESULTS</h2>
+            Main Page of Assessment Results
         </div>
     </div>
 </div>
@@ -13,7 +13,7 @@
     <div class="panel-top">
         <div style="float:left;width: 300px;">
             <select class="form-custom" name="pilih"  id="pilihHasil">
-                <option disabled selected value="">-- Pilih Jenis Barang --</option>;
+                <option disabled selected value="">-- Choose an item --</option>;
                 <?php
                 $query="SELECT*FROM jenis_barang";
                 $execute=$konek->query($query);
@@ -22,13 +22,13 @@
                         echo "<option value=$data[id_jenisbarang]>$data[namaBarang]</option>";
                     }
                 }else{
-                    echo '<option disabled value="">Tidak ada data</option>';
+                    echo '<option disabled value="">There is no item listed</option>';
                 }
                 ?>
             </select>
         </div>
         <div style="float: right;" class="input-dropdown">
-            <a  class="btn btn-green" id="btn-dropdown" target="_blank" href="./cetakpdf.php"><i class="fa fa-print"></i> Cetak Pdf</a>
+            <!-- <a  class="btn btn-green" id="btn-dropdown" target="_blank" href="./cetakpdf.php"><i class="fa fa-print"></i> Cetak Pdf</a> -->
             <!--ul class="dropdown" id="panel-dropdown">
                <li><a href="./cetakexcel.php"><i class="fa fa-file-excel"></i> Cetak Excel</a></li>
                 <li><a target="_blank" href="./cetakpdf.php"><i class="fa fa-file-pdf"></i> Cetak Pdf</a></li>
@@ -38,7 +38,7 @@
     </div>
     <div class="panel-middle">
         <div id="valueHasil">
-            <p class='text-center'><b>Pilih List Barang, untuk menampilkan hasil</b></p>
+            <p class='text-center'><b>Select an item to display the results</b></p>
         </div>
     </div>
     <div class="panel-bottom"></div>

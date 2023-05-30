@@ -3,7 +3,7 @@
     <div class="panel-middle" id="judul">
         <img src="asset/image/barang.svg">
         <div id="judul-text">
-            <h2 class="text-green">BARANG</h2>
+            <h2 class="text-green">ITEMS</h2>
             Halamanan Administrator Barang
         </div>
     </div>
@@ -24,12 +24,12 @@
     <div class="col-8">
         <div class="panel">
             <div class="panel-top">
-                <b class="text-green">Daftar Barang</b>
+                <b class="text-green">List of Items</b>
             </div>
             <div class="panel-middle">
                 <div class="table-responsive">
                     <table>
-                        <thead><tr><th>No</th><th>Nama</th><th>Aksi</th></tr></thead>
+                        <thead><tr><th>No</th><th>Name</th><th>Action</th></tr></thead>
                         <tbody>
                         <?php
                         $query="SELECT * FROM jenis_barang";

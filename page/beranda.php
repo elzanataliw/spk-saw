@@ -3,8 +3,8 @@
     <div class="panel-middle" id="judul">
         <img src="asset/image/beranda.svg">
         <div id="judul-text">
-            <h2 class="text-green">BERANDA</h2>
-            Halamanan Utama Administrator
+            <h2 class="text-green">HOME</h2>
+            Administrator Page
         </div>
     </div>
 </div>

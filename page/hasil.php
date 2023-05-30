@@ -4,7 +4,7 @@
         <img src="asset/image/rank.svg">
         <div id="judul-text">
             <h2 class="text-green">RESULTS</h2>
-            Main Page of Assessment Results
+            Administrator Page Results
         </div>
     </div>
 </div>

@@ -7,7 +7,7 @@
     <li><a href="./?page=kriteria"style="font-weight: bold;">CRITERIA</a></li>
     <li><a href="./?page=subkriteria"style="font-weight: bold;">SUB CRITERIA</a></li>
     <li><a href="./?page=bobot"style="font-weight: bold;">WEIGHT</a></li>
-    <li><a href="./?page=penilaian"style="font-weight: bold;">Penilaian</a></li>
+    <li><a href="./?page=penilaian"style="font-weight: bold;">SCORE</a></li>
     <li><a href="./?page=hasil"style="font-weight: bold;">RESULTS</a></li>
     <li><a href="./logout.php" id="out"style="font-weight: bold;">LOGOUT</a></li>
 </ul>

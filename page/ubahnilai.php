@@ -9,7 +9,7 @@ while ($data=$getnilaiKriteria->fetch_array(MYSQLI_ASSOC)) {
 }
 ?>
 <div class="panel-top panel-top-edit">
-    <b><i class="fa fa-pencil-alt"></i> Ubah data</b>
+    <b><i class="fa fa-pencil-alt"></i>Edit data</b>
 </div>
 <form id="form" action="./proses/prosesubah.php" method="POST">
     <input type="hidden" value="nilai" name="op">
@@ -21,7 +21,7 @@ while ($data=$getnilaiKriteria->fetch_array(MYSQLI_ASSOC)) {
             $data=$execute->fetch_array(MYSQLI_ASSOC);
             ?>
             <div class="group-input">
-                <label for="jenisbarang">Nama Supplier</label>
+                <label for="jenisbarang">Supplier Name</label>
                 <input class="form-custom" value="<?php echo $data['namaSupplier'];?>" disabled type="text" autocomplete="off" required name="jenisbarang" id="jenisbarang">
             </div>
         </div>
@@ -32,7 +32,7 @@ while ($data=$getnilaiKriteria->fetch_array(MYSQLI_ASSOC)) {
             $data=$execute->fetch_array(MYSQLI_ASSOC);
             ?>
             <div class="group-input">
-                <label for="jenisbarang">Jenis Barang</label>
+                <label for="jenisbarang">Item Name</label>
                 <input class="form-custom" value="<?php echo $data['namaBarang'];?>" disabled type="text" autocomplete="off" required name="jenisbarang" id="jenisbarang" placeholder="jenisbarang">
             </div>
         </div>
@@ -57,7 +57,7 @@ while ($data=$getnilaiKriteria->fetch_array(MYSQLI_ASSOC)) {
                             echo "<option $selected value=\"$data2[id_nilaikriteria]\">$data2[keterangan]</option>";
                         }
                     }else{
-                        echo "<option disabled value=\"\">Belum ada Nilai Kriteria</option>";
+                        echo "<option disabled value=\"\">There is no criteria</option>";
                     };
                 echo "</select></div>";
             }
@@ -65,7 +65,7 @@ while ($data=$getnilaiKriteria->fetch_array(MYSQLI_ASSOC)) {
         ?>
     </div>
     <div class="panel-bottom">
-        <button type="submit" id="buttonsimpan" class="btn btn-green"><i class="fa fa-save"></i> Simpan</button>
+        <button type="submit" id="buttonsimpan" class="btn btn-green"><i class="fa fa-save"></i> Save</button>
         <button type="reset" id="buttonreset" class="btn btn-second">Reset</button>
     </div>
 </form>

@@ -12,7 +12,7 @@ if ($execute2->num_rows == 0){
 ?>
 <!-- judul -->
 <div class="panel-top">
-    <b class="text-green">Detail data</b>
+    <b class="text-green">Data details</b>
 </div>
 <form>
     <div class="panel-middle">
@@ -23,7 +23,7 @@ if ($execute2->num_rows == 0){
             $data=$execute->fetch_array(MYSQLI_ASSOC);
             ?>
             <div class="group-input">
-                <label for="jenisbarang">Nama Supplier</label>
+                <label for="jenisbarang">Supplier Name</label>
                 <input class="form-custom" value="<?php echo $data['namaSupplier'];?>" disabled type="text" autocomplete="off" required name="jenisbarang" id="jenisbarang">
             </div>
         </div>
@@ -34,7 +34,7 @@ if ($execute2->num_rows == 0){
             $data=$execute->fetch_array(MYSQLI_ASSOC);
             ?>
             <div class="group-input">
-                <label for="jenisbarang">Jenis Barang</label>
+                <label for="jenisbarang">Item Name</label>
                 <input class="form-custom" value="<?php echo $data['namaBarang'];?>" disabled type="text" autocomplete="off" required name="jenisbarang" id="jenisbarang" placeholder="jenisbarang">
             </div>
         </div>
@@ -50,7 +50,7 @@ if ($execute2->num_rows == 0){
         ?>
     </div>
     <div class="panel-bottom">
-        <button type="submit" class="btn btn-green">Simpan</button>
+        <button type="submit" class="btn btn-green">Save</button>
         <button type="reset" class="btn btn-second">Reset</button>
     </div>
 </form>

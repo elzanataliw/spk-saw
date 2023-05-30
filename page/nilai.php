@@ -3,8 +3,8 @@
     <div class="panel-middle" id="judul">
         <img src="asset/image/bobot.svg">
         <div id="judul-text">
-            <h2 class="text-green">PENILAIAN</h2>
-            Halamanan Administrator Penilaian
+            <h2 class="text-green">SCORE</h2>
+            Administrator Page Score
         </div>
     </div>
 </div>
@@ -26,10 +26,10 @@
     <div class="col-8">
         <div class="panel">
             <div class="panel-top">
-                <b style="float: left" class="text-green">Daftar Nilai</b>
+                <b style="float: left" class="text-green">Score table</b>
                 <div style="float:right;width: 250px;">
                     <select class="form-custom" name="pilih" id="pilihNilai">
-                        <option value="">Semua Jenis Barang</option>;
+                        <option value="">All item</option>;
                         <?php
                         $query="SELECT*FROM jenis_barang";
                         $execute=$konek->query($query);
@@ -53,7 +53,7 @@
             <div class="panel-middle" id="animation">
                 <div class="table-responsive">
                     <table>
-                        <thead><tr><th>No</th><th>Nama Barang</th><th>Nama Supplier</th><th>Aksi</th></tr></thead>
+                        <thead><tr><th>No</th><th>Item Name</th><th>Supplier Name</th><th>Action</th></tr></thead>
                         <tbody id="isiNilai"></tbody>
                     </table>
                 </div>

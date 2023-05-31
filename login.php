@@ -20,7 +20,7 @@
             <label for="password">Password :</label>
             <input type="password" class="form-custom" required autocomplete="off" placeholder="Password" id="password" name="password" >
         </div>
-        <button class="btn btn-green btn-full"><i class="fa fa-arrow-alt-circle-right text-white"></i> Login</button>
+        <button class="btn btn-pink btn-full"><i class="fa fa-arrow-alt-circle-right text-white"></i> Login</button>
     </form>
 </div>
 <p>&copy Timeless Product Timeless Beauty</p>

@@ -14,7 +14,7 @@ a {
   text-decoration: none; }
 
 a.link {
-  color: #135a4c;
+  color: #E64177;
   font-weight: 600; }
 
 h1 {
@@ -52,7 +52,7 @@ b, h1, h2, h3, h4, h5 {
   line-height: 1.5;
 }
 
-.text-green {
+.text-pink {
   color: #E64177 !important; }
 
 input, select {
@@ -115,16 +115,16 @@ input, select {
   .btn i {
     color: white !important; }
 
-.btn-green {
+.btn-pink {
   background-color: #E64177;
   color: white !important; }
-  .btn-green:hover {
+  .btn-pink:hover {
     background-color: #FF6497; }
 
-.btn-light-green {
+.btn-light-pink {
   background-color: #FF8B9D;
   color: white !important; }
-  .btn-light-green:hover {
+  .btn-light-pink:hover {
     background-color: #FFACBC; }
 
 .btn-yellow {
@@ -265,7 +265,7 @@ table {
 
 .panel-bottom {
   padding: 10px;
-  border-bottom: solid 3px #135a4c;
+  border-bottom: solid 3px #E64177;
   border-top: solid 1px #dddddd; }
 
 header {
@@ -308,7 +308,7 @@ main {
   position: relative;
   display: flex;
   justify-content: center; }
-  main #bg-green {
+  main #bg-pink {
     background-color: #E64177;
     width: 100vw;
     height: 30px;

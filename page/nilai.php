@@ -1,9 +1,9 @@
 <!-- judul -->
 <div class="panel">
     <div class="panel-middle" id="judul">
-        <img src="asset/image/bobot.svg">
+        <img src="asset/image/score.png" style="width:42px; height:42px">
         <div id="judul-text">
-            <h2 class="text-green">SCORE</h2>
+            <h2 class="text-pink">SCORE</h2>
             Administrator Page Score
         </div>
     </div>
@@ -26,7 +26,7 @@
     <div class="col-8">
         <div class="panel">
             <div class="panel-top">
-                <b style="float: left" class="text-green">Score table</b>
+                <b style="float: left" class="text-pink">Score table</b>
                 <div style="float:right;width: 250px;">
                     <select class="form-custom" name="pilih" id="pilihNilai">
                         <option value="">All item</option>;

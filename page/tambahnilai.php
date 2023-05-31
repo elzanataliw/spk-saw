@@ -1,6 +1,6 @@
 <!-- judul -->
 <div class="panel-top">
-    <b class="text-green"><i class="fa fa-plus-circle text-green"></i>Add data</b>
+    <b class="text-pink"><i class="fa fa-plus-circle text-pink"></i>Add data</b>
 </div>
 <form id="form" action="./proses/prosestambah.php" method="POST">
     <input type="hidden" value="nilai" name="op">
@@ -64,7 +64,7 @@
         ?>
     </div>
     <div class="panel-bottom">
-        <button type="submit" id="buttonsimpan" class="btn btn-green"><i class="fa fa-save"></i> Save</button>
+        <button type="submit" id="buttonsimpan" class="btn btn-pink"><i class="fa fa-save"></i> Save</button>
         <button type="reset" id="buttonreset" class="btn btn-second">Reset</button>
     </div>
 </form>

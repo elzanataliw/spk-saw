@@ -14,7 +14,7 @@ a {
   text-decoration: none; }
 
 a.link {
-  color: #135a4c;
+  color: #E64177;
   font-weight: 600; }
 
 h1 {
@@ -50,8 +50,8 @@ b, h1, h2, h3, h4, h5 {
   text-align: -moz-center;
   text-align: -webkit-center; }
 
-.text-green {
-  color: #1aab4c !important; }
+.text-pink {
+  color: #E64177 !important; }
 
 input, select {
   border: none;
@@ -113,30 +113,30 @@ input, select {
   .btn i {
     color: white !important; }
 
-.btn-green {
-  background-color: #1aab4c;
+.btn-pink {
+  background-color: #E64177;
   color: white !important; }
-  .btn-green:hover {
-    background-color: #1AB14B; }
+  .btn-pink:hover {
+    background-color: #FF6497; }
 
-.btn-light-green {
-  background-color: #76bd47;
+.btn-light-pink {
+  background-color: #FF8B9D;
   color: white !important; }
-  .btn-light-green:hover {
-    background-color: #80CB4B; }
+  .btn-light-pink:hover {
+    background-color: #FFACBC; }
 
 .btn-yellow {
-  background-color: #bad530;
+  background-color: #FDCACF;
   color: white !important; }
   .btn-yellow:hover {
-    background-color: #C2DE31; }
+    background-color: #FFDADD; }
 
 .btn-second {
   background-color: transparent;
-  color: #1aab4c;
+  color: #E64177;
   font-weight: 600; }
   .btn-second:hover {
-    color: #55bf17; }
+    color: #FF6497; }
 
 .btn-full {
   width: 100%; }
@@ -262,7 +262,7 @@ table {
 
 .panel-bottom {
   padding: 10px;
-  border-bottom: solid 3px #135a4c;
+  border-bottom: solid 3px #E64177;
   border-top: solid 1px #dddddd; }
 
 header {
@@ -272,7 +272,7 @@ header {
   text-align: center; }
 
 nav {
-  background-color: #1aab4c;
+  background-color: #E64177;
   width: 100vw; }
   nav button#hidden {
     display: none; }
@@ -291,7 +291,7 @@ ul.nav {
     color: white;
     padding: 6px 18px; }
     ul.nav li a:hover {
-      background-color: #13903e; }
+      background-color: #E64177; }
 
 @media screen and (max-width: 600px) {
   nav button#hidden {
@@ -305,8 +305,8 @@ main {
   position: relative;
   display: flex;
   justify-content: center; }
-  main #bg-green {
-    background-color: #1aab4c;
+  main #bg-pink {
+    background-color: #E64177;
     width: 100vw;
     height: 30px;
     z-index: 0; }

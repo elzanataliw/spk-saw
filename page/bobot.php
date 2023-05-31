@@ -4,9 +4,9 @@ require './connect.php';
 <!-- judul -->
 <div class="panel">
     <div class="panel-middle" id="judul">
-        <img src="asset/image/bobot.svg">
+        <img src="asset/image/weight.png" style="width:42px; height:42px">
         <div id="judul-text">
-            <h2 class="text-green">WEIGHT</h2>
+            <h2 class="text-pink">WEIGHT</h2>
             Administrator Page Criteria Weight
         </div>
     </div>
@@ -29,7 +29,7 @@ require './connect.php';
     <div class="col-8">
         <div class="panel">
             <div class="panel-top">
-                <b class="text-green">Weight List</b>
+                <b class="text-pink">Weight List</b>
             </div>
             <div class="panel-middle">
                 <div class="table-responsive">
@@ -48,14 +48,14 @@ require './connect.php';
                                     <td>$data[namaBarang]</td>
                                     <td>
                                     <div class='norebuttom'>
-                                    <a class=\"btn btn-green\" href='./?page=bobot&aksi=lihat&id=".$data['idbarangbobot']."'><i class='fa fa-eye'></i></a>
-                                    <a class=\"btn btn-light-green\" href='./?page=bobot&aksi=ubah&id=".$data['idbarangbobot']."'><i class='fa fa-pencil-alt'></i></a>
+                                    <a class=\"btn btn-pink\" href='./?page=bobot&aksi=lihat&id=".$data['idbarangbobot']."'><i class='fa fa-eye'></i></a>
+                                    <a class=\"btn btn-light-pink\" href='./?page=bobot&aksi=ubah&id=".$data['idbarangbobot']."'><i class='fa fa-pencil-alt'></i></a>
                                     <a class=\"btn btn-yellow\" data-a=".$data['namaBarang']." id='hapus' href='./proses/proseshapus.php/?op=bobot&id=".$data['idbarangbobot']."'><i class='fa fa-trash-alt'></i></a></td>
                                 </div></tr>";
                                 $no++;
                             }
                         }else{
-                            echo "<tr><td  class='text-center text-green' colspan='4'><b>Empty</b></td></tr>";
+                            echo "<tr><td  class='text-center text-pink' colspan='4'><b>Empty</b></td></tr>";
                         }
                         ?>
                         </tbody>

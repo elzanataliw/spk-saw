@@ -1,8 +1,8 @@
 main{
   position: relative;
   @include displayflex;
-  #bg-green{
-      background-color: $green;
+  #bg-pink{
+      background-color: $pink;
       width: 100vw;
       height: 30px;
       z-index: 0;

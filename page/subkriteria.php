@@ -1,8 +1,8 @@
 <div class="panel">
     <div class="panel-middle" id="judul">
-        <img src="asset/image/sub-kriteria.svg">
+        <img src="asset/image/subcriteria.png" style="width:42px; height:42px">
         <div id="judul-text">
-            <h2 class="text-green">SUB CRITERIA</h2>
+            <h2 class="text-pink">SUB CRITERIA</h2>
             Administrator Page Sub-Criteria
         </div>
     </div>
@@ -23,7 +23,7 @@
     <div class="col-8">
         <div class="panel">
             <div class="panel-top">
-                <b style="float: left" class="text-green">List of Sub-Criteria</b>
+                <b style="float: left" class="text-pink">List of Sub-Criteria</b>
                 <div style="float:right;width: 250px;">
                     <select class="form-custom" name="pilih" id="pilih">
                         <option value="">All Criteria</option>;

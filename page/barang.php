@@ -1,9 +1,9 @@
 <!-- judul -->
 <div class="panel">
     <div class="panel-middle" id="judul">
-        <img src="asset/image/barang.svg">
+        <img src="asset/image/item.png" style="width:42px; height:42px">
         <div id="judul-text">
-            <h2 class="text-green">ITEM</h2>
+            <h2 class="text-pink">ITEM</h2>
             Administrator Page Item
         </div>
     </div>
@@ -24,7 +24,7 @@
     <div class="col-8">
         <div class="panel">
             <div class="panel-top">
-                <b class="text-green">List of Items</b>
+                <b class="text-pink">List of Items</b>
             </div>
             <div class="panel-middle">
                 <div class="table-responsive">
@@ -43,13 +43,13 @@
                                     <td>$data[namaBarang]</td>
                                     <td>
                                     <div class='norebuttom'>
-                                    <a class=\"btn btn-light-green\" href='./?page=barang&aksi=ubah&id=".$data['id_jenisbarang']."'><i class='fa fa-pencil-alt'></i></a>
+                                    <a class=\"btn btn-light-pink\" href='./?page=barang&aksi=ubah&id=".$data['id_jenisbarang']."'><i class='fa fa-pencil-alt'></i></a>
                                     <a class=\"btn btn-yellow\" data-a=".$data['namaBarang']." id='hapus' href='./proses/proseshapus.php/?op=barang&id=".$data['id_jenisbarang']."'><i class='fa fa-trash-alt'></i></a></td>
                                 </div></tr>";
                                 $no++;
                             }
                         }else{
-                            echo "<tr><td  class='text-center text-green' colspan='3'>Empty</td></tr>";
+                            echo "<tr><td  class='text-center text-pink' colspan='3'>Empty</td></tr>";
                         }
                         ?>
                         </tbody>

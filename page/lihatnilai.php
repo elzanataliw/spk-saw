@@ -12,7 +12,7 @@ if ($execute2->num_rows == 0){
 ?>
 <!-- judul -->
 <div class="panel-top">
-    <b class="text-green">Data details</b>
+    <b class="text-pink">Data details</b>
 </div>
 <form>
     <div class="panel-middle">
@@ -50,7 +50,7 @@ if ($execute2->num_rows == 0){
         ?>
     </div>
     <div class="panel-bottom">
-        <button type="submit" class="btn btn-green">Save</button>
+        <button type="submit" class="btn btn-pink">Save</button>
         <button type="reset" class="btn btn-second">Reset</button>
     </div>
 </form>

@@ -19,7 +19,7 @@ require './connect.php';
     <?php include "nav.php"; ?>
 </nav>
 <main>
-    <div id="bg-green"></div>
+    <div id="bg-pink"></div>
     <div id="main-body">
         <?php include "page.php"; ?>
     </div>

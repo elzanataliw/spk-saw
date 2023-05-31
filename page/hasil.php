@@ -1,9 +1,9 @@
 <!-- judul -->
 <div class="panel">
     <div class="panel-middle" id="judul">
-        <img src="asset/image/rank.svg">
+        <img src="asset/image/result.png" style="width:42px; height:42px">
         <div id="judul-text">
-            <h2 class="text-green">RESULT</h2>
+            <h2 class="text-pink">RESULT</h2>
             Administrator Page Result
         </div>
     </div>
@@ -28,7 +28,7 @@
             </select>
         </div>
         <div style="float: right;" class="input-dropdown">
-            <!-- <a  class="btn btn-green" id="btn-dropdown" target="_blank" href="./cetakpdf.php"><i class="fa fa-print"></i> Cetak Pdf</a> -->
+            <!-- <a  class="btn btn-pink" id="btn-dropdown" target="_blank" href="./cetakpdf.php"><i class="fa fa-print"></i> Cetak Pdf</a> -->
             <!--ul class="dropdown" id="panel-dropdown">
                <li><a href="./cetakexcel.php"><i class="fa fa-file-excel"></i> Cetak Excel</a></li>
                 <li><a target="_blank" href="./cetakpdf.php"><i class="fa fa-file-pdf"></i> Cetak Pdf</a></li>

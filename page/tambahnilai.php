@@ -1,6 +1,6 @@
 <!-- judul -->
 <div class="panel-top">
-    <b class="text-pink"><i class="fa fa-plus-circle text-pink"></i>Add data</b>
+    <b class="text-pink"><i class="fa fa-plus-circle text-pink"></i> Add data</b>
 </div>
 <form id="form" action="./proses/prosestambah.php" method="POST">
     <input type="hidden" value="nilai" name="op">

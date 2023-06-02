@@ -37,7 +37,7 @@ if ($execute->num_rows > 0){
         </div>
     </div>
     <div class="panel-bottom">
-        <button type="submit" id="buttonsimpan" class="btn btn-green"><i class="fa fa-save"></i> Save</button>
+        <button type="submit" id="buttonsimpan" class="btn btn-pink"><i class="fa fa-save"></i> Save</button>
         <button type="reset" id="buttonreset" class="btn btn-second">Reset</button>
     </div>
 </form>

@@ -15,7 +15,7 @@ if ($execute2->num_rows == 0){
 ?>
 <!-- judul -->
 <div class="panel-top">
-    <b class="text-green">Detail data</b>
+    <b class="text-pink">Detail data</b>
 </div>
 <form>
     <div class="panel-middle">

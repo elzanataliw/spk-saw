@@ -28,13 +28,13 @@ switch ($op){
                 <td>".$data['nilai']."</td>
                 <td>".$data['keterangan']."</td>
                 <td><div class='norebuttom'>
-                <a class=\"btn btn-light-green\" href='./?page=subkriteria&aksi=ubah&id=".$data['id_nilaikriteria']."'><i class='fa fa-pencil-alt'></i></a>
+                <a class=\"btn btn-light-pink\" href='./?page=subkriteria&aksi=ubah&id=".$data['id_nilaikriteria']."'><i class='fa fa-pencil-alt'></i></a>
                 <a class=\"btn btn-yellow\" data-a=\"nilai $data[nilai] dalam $data[namaKriteria]\" id='hapus' href='./proses/proseshapus.php/?op=subkriteria&id=".$data['id_nilaikriteria']."'><i class='fa fa-trash-alt'</a></td></div>
             </tr>";
             $no++;
         }
     }else{
-        echo "<tr><td  class='text-center text-green' colspan='4'><b>Empty</b></td></tr>";
+        echo "<tr><td  class='text-center text-pink' colspan='4'><b>Empty</b></td></tr>";
     }
         break;
     case 'nilai':
@@ -55,14 +55,14 @@ switch ($op){
                     <td>$data[namaSupplier]</td>
                     <td>
                     <div class='norebuttom'>
-                    <a class=\"btn btn-green\" href=\"./?page=penilaian&aksi=lihat&a=$data[id_supplier]&b=$data[id_jenisbarang]\"><i class='fa fa-eye'></i></a>
-                    <a class=\"btn btn-light-green\" href=\"./?page=penilaian&aksi=ubah&a=$data[id_supplier]&b=$data[id_jenisbarang]\"><i class='fa fa-pencil-alt'></i></a>
+                    <a class=\"btn btn-pink\" href=\"./?page=penilaian&aksi=lihat&a=$data[id_supplier]&b=$data[id_jenisbarang]\"><i class='fa fa-eye'></i></a>
+                    <a class=\"btn btn-light-pink\" href=\"./?page=penilaian&aksi=ubah&a=$data[id_supplier]&b=$data[id_jenisbarang]\"><i class='fa fa-pencil-alt'></i></a>
                     <a class=\"btn btn-yellow\" data-a=\".$data[namaBarang] - $data[namaSupplier]\" id='hapus' href='./proses/proseshapus.php/?op=nilai&id=".$data['id_supplier']."'><i class='fa fa-trash-alt'></i></a></td>
                 </div></tr>";
                 $no++;
             }
         }else{
-            echo "<tr><td  class='text-center text-green' colspan='4'><b>Empty</b></td></tr>";
+            echo "<tr><td  class='text-center text-pink' colspan='4'><b>Empty</b></td></tr>";
         }
         break;
 }

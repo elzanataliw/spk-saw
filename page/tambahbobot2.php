@@ -26,7 +26,7 @@
         <?php
 $listWeight=array(
     array("nama"=>"0 - Sangat Rendah","nilai"=>0),
-    array("nama"=>"0.25 - Rendah","nilai"=>0.25),
+    array("nama"=>"0.20 - Rendah","nilai"=>0.2),
     array("nama"=>"0.5 - Tengah","nilai"=>0.5),
     array("nama"=>"0.75 - Tinggi","nilai"=>0.75),
     array("nama"=>"1 - Sangat Tinggi","nilai"=>1),
